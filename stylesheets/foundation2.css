@@ -1,0 +1,507 @@
+/* Global Standards ---------------------- */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Cutive');
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {font-size: 62.5%; min-height:100%; position:relative;}
+
+body {
+  width: 100%;
+  margin: 0!important;
+  background-color: #f3ecec;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+ width: 70%;
+ margin: 0 auto;
+}
+
+nav ul {
+ list-style: none;
+ overflow: hidden;
+}
+
+h1 {
+  color: #b14d4f;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* Links ---------------------- */
+
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+p a, p a:visited {line-height: inherit;}
+
+.hdt-left a {
+  color: #564141;
+  text-decoration: none;
+  line-height: inherit;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.hdt-left a:hover {
+  color: #ff1a4a;
+}
+
+.hdt-right a {
+  color: #564141;
+  text-decoration: none;
+  line-height: inherit;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.hdt-right a:hover {
+  color: #ff1a4a;
+}
+
+.footer a {
+  color: #888080;
+}
+
+.footer a:hover {
+  color: #eb4d50;
+}
+
+
+/* Styles ---------------------- */
+
+.header {
+  width: 100%;
+  min-height: 140px;
+  height: auto;
+  background-color: #994646;
+  line-height: 1;
+  font-size: 18px;
+  color:#EEF4ED;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #eae0e0;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  font-family: "PT Sans Narrow", sans-serif;
+  line-height: 1;
+  font-size: 19px;
+  position: relative;
+  bottom: 0;
+  flex: 0 0 auto;
+  height: auto;
+  color: #888080;
+}
+
+.navigationbar {
+  width: 100%;
+  background-color: #8e3b3b;
+}
+
+.header-table {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #e6dada;
+  min-height: 25px;
+  color: #564141;
+  font-size: 13px;
+}
+
+.hdt-right {
+  width: 40%;
+  float:left;
+  text-align: right;
+}
+
+.right-table {
+  width: 40%;
+  float:left;
+  text-align: justify;
+}
+
+.hdt-left {
+  width: 60%;
+  float:left;
+}
+
+.inner-header {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.logo {
+  width: 249px;
+  height: 94px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: auto;
+}
+
+.content {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  flex: 1 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.left {
+  background-color:#134074;
+  padding:20px;
+  float:left;
+  width:20%;
+}
+
+.main {
+  background-color:#13315C;
+  padding:20px;
+  float:left;
+  width:80%;
+}
+
+.absolutemain {
+  background-color:none;
+  padding:20px;
+  float:left;
+  width:100%;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.footerleft {
+ width:33%;
+ float: left;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ line-height: 1.7;
+}
+.footercenter {
+ width: 33%;
+ float: left;
+ left: 33%;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ line-height: 1.7;
+}
+.footerright {
+ width: 33%;
+ float: right;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ line-height: 1.7;
+}
+
+.footerright img {
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.footerleft img {
+  margin-right: 15px;
+}
+
+.addrss {
+  margin-left: 23px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:800px) {
+  .left, .main, .absolutemain {
+    width:100%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .footerright {
+    width:100%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .footerleft, .footercenter, .hdt-right {
+    display: none;
+  }
+}
+
+/* Navigation ---------------------- */
+
+nav li a {
+ background: #8e3b3b;
+ border-right: 1px solid #546e9c;
+ color: #fff;
+ display: block;
+ float: left;
+ font: 400 13px/1.4 "PT Sans Narrow", 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+ padding: 10px;
+ text-align: center;
+ text-decoration: none;
+ text-transform: uppercase;
+ width: 12.5%;
+}
+
+/*SMALL*/
+nav small {
+ color: #e6dada;
+ font: 100 11px/1 Helvetica, Verdana, Arial, sans-serif;
+ text-transform: none;
+
+}
+
+nav li a {
+  display: block;
+  float: left;
+  width: 12.5%;
+  padding: 10px;
+  background: #8e3b3b;
+  border-right: 1px solid #e6dada;
+  color: #fff;
+  font: 400 13px/1.4 "PT Sans Narrow", 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav li a {
+  background: #8e3b3b;
+  border-right: 1px solid #e6dada;
+  color: #fff;
+  display: block;
+  float: left;
+  font: 400 13px/1.4 "PT Sans Narrow", 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 25%;
+
+ /*TRANSISTIONS*/
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+      -o-transition: background 0.5s ease;
+     -ms-transition: background 0.5s ease;
+         transition: background 0.5s ease;
+}
+
+/*HOVER*/
+nav li a:hover {
+ background: #823131;
+ color: #ff1a4a;
+}
+
+nav li:last-child a {
+ border: none;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 1220px),
+only screen and (max-device-width : 1220px){
+ nav li a {
+ font: 400 10px/1.4 "PT Sans Narrow", 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+ width: 25%;
+ }
+
+ nav small {
+ font: 100 10px/1 Helvetica, Verdana, Arial, sans-serif;
+ }
+}
+
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+ nav {
+  width: 100%;
+ }
+ nav li a {
+ width: 25%;
+ font: 400 11px/1.4 "PT Sans Narrow", 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+ }
+
+ nav li:last-child a, nav li:nth-child(4) a {
+ border-right: none;
+ }
+}
+
+@media only screen and (max-width : 580px),
+only screen and (max-device-width : 580px){
+ nav li a {
+ width: 50%;
+ font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+ padding-top: 12px;
+ padding-bottom: 12px;
+ }
+
+ nav li:nth-child(even) a {
+ border-right: none;
+ }
+
+ nav li:nth-child(1) a, nav li:nth-child(2) a {
+ border-bottom: 1px solid #e6dada;
+ }
+}
+
+@media only screen and (max-width: 320px),
+only screen and (max-device-width: 320px){
+ nav li a {
+ font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+ }
+}
+
+/* Slider ---------------------- */
+
+.sldiv {
+  width: 100%;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {left:0;}
+  20% {left:0;}
+  25% {left: -100%;}
+  45% {left: -100%;}
+  50% {left: -200%;}
+  75% {left: -200%;}
+}
+
+/* Forms ---------------------- */
+
+.registration, .login {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 440px;
+  margin: auto;
+}
+
+@media screen and (max-width:600px) {
+  .registration, .login {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 200px;
+}
+}
+.registrationform, .loginform {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  height: 45px;
+}
+
+.registrationform label, .loginform label {
+  width:200px;
+  margin-top: 3px;
+  display:inline-block;
+  float:left;
+  padding:3px;
+}
+.registrationform input, .loginform input {
+  height:20px;
+  width:220px;
+  padding:5px 8px;
+}
+.registrationform button, .loginform button {
+  margin-left:200px;
+}
+
+@media screen and (max-width:800px) {
+  .registrationform button, .loginform button {
+    margin-left: 0;
+  }
+}
+
+.registrationform input, .loginform input {
+  border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:2px;
+}
+.registrationform input:focus, .loginform input:focus {
+  background: #fff;
+  border:1px solid #555;
+  box-shadow: 0 0 3px #aaa;
+}
+
+/* Button Style */
+
+.registrationform button, .loginform button {
+  background-color: #b14c4e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b14c4e), to(#ff817a));
+  background: -webkit-linear-gradient(top, #b14c4e, #ff817a);
+  background: -moz-linear-gradient(top, #b14c4e, #ff817a);
+  background: -ms-linear-gradient(top, #b14c4e, #ff817a);
+  background: -o-linear-gradient(top, #b14c4e, #ff817a);
+  background: linear-gradient(top, #b14c4e, #ff817a);
+  border: 1px solid #8a4946;
+  border-bottom: 1px solid #8a4946;
+  border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #b37373;
+    -webkit-box-shadow: 0 1px 0 0 #b37373 inset ;
+    -moz-box-shadow: 0 1px 0 0 #b37373 inset;
+    -ms-box-shadow: 0 1px 0 0 #b37373 inset;
+    -o-box-shadow: 0 1px 0 0 #b37373 inset;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #a76868;
+}
+
+.registrationform button:hover, .loginform button:hover {
+  opacity:.85;
+  cursor: pointer;
+}
+
+.registrationform button:active, .loginform button:active {
+  border: 1px solid #c71414;
+  box-shadow: 0 0 10px 5px #e23732 inset;
+    -webkit-box-shadow:0 0 10px 5px #e23732 inset ;
+    -moz-box-shadow: 0 0 10px 5px #e23732 inset;
+    -ms-box-shadow: 0 0 10px 5px #e23732 inset;
+    -o-box-shadow: 0 0 10px 5px #e23732 inset;
+}
