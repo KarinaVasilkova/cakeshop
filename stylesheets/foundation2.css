@@ -410,7 +410,7 @@ only screen and (max-device-width: 320px){
 
 /* Forms ---------------------- */
 
-.registration, .login {
+.order {
   margin-bottom: 15px;
   margin-top: 15px;
   width: 440px;
@@ -418,46 +418,46 @@ only screen and (max-device-width: 320px){
 }
 
 @media screen and (max-width:600px) {
-  .registration, .login {
+  .order {
   margin-bottom: 15px;
   margin-top: 15px;
   width: 200px;
 }
 }
-.registrationform, .loginform {
+.orderform {
   margin-top: 1px;
   margin-bottom: 1px;
   height: 45px;
 }
 
-.registrationform label, .loginform label {
+.orderform label {
   width:200px;
   margin-top: 3px;
   display:inline-block;
   float:left;
   padding:3px;
 }
-.registrationform input, .loginform input {
+.orderform input {
   height:20px;
   width:220px;
   padding:5px 8px;
 }
-.registrationform button, .loginform button {
+.orderform button {
   margin-left:200px;
 }
 
 @media screen and (max-width:800px) {
-  .registrationform button, .loginform button {
+  .orderform button {
     margin-left: 0;
   }
 }
 
-.registrationform input, .loginform input {
+.orderform input {
   border:1px solid #aaa;
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius:2px;
 }
-.registrationform input:focus, .loginform input:focus {
+.orderform input:focus {
   background: #fff;
   border:1px solid #555;
   box-shadow: 0 0 3px #aaa;
@@ -465,7 +465,7 @@ only screen and (max-device-width: 320px){
 
 /* Button Style */
 
-.registrationform button, .loginform button {
+.orderform button {
   background-color: #b14c4e;
   background: -webkit-gradient(linear, left top, left bottom, from(#b14c4e), to(#ff817a));
   background: -webkit-linear-gradient(top, #b14c4e, #ff817a);
@@ -492,12 +492,12 @@ only screen and (max-device-width: 320px){
   text-shadow: 0 -1px 0 #a76868;
 }
 
-.registrationform button:hover, .loginform button:hover {
+.orderform button:hover {
   opacity:.85;
   cursor: pointer;
 }
 
-.registrationform button:active, .loginform button:active {
+.orderform button:active {
   border: 1px solid #c71414;
   box-shadow: 0 0 10px 5px #e23732 inset;
     -webkit-box-shadow:0 0 10px 5px #e23732 inset ;
