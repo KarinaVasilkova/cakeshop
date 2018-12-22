@@ -1,34 +1,34 @@
 <div class="content">
   <div class="absolutemain">
-    <div class="registration">
+    <div class="order">
         <h1>Замовлення</h1> <hr> <br>
     <form action="./index.php?action=order_check" method="post">
-        <div class="registrationform">
+        <div class="orderform">
             <label for="pip">ПІП:</label>
             <input type="text" name="pip"/>
         </div>
-        <div class="registrationform">
+        <div class="orderform">
             <label for="email">Електронна пошта:</label>
             <input type="email" name="email"/>
         </div>
-        <div class="registrationform">
+        <div class="orderform">
             <label for="address">Ваша адреса:</label>
             <input type="text" name="address"/>
         </div>
-        <div class="registrationform">
+        <div class="orderform">
             <label for="phone">Телефон:</label>
             <input type="text" name="phone"/>
         </div>
-        <div class="registrationform">
+        <div class="orderform">
             <label for="cake">Тортик:</label>
             <input type="text" name="cake"/>
         </div>
-        <div class="registrationform">
+        <div class="orderform">
             <label for="kg">Вага(кг):</label>
             <input type="text" name="kg"/>
             <p>1 кг = 200 грн</p>
         </div>
-        <div class="registrationform">
+        <div class="orderform">
             <label for="wishes">Особливі побажання:</label>
             <input type="textarea" name="wishes"/>
         </div>
@@ -48,7 +48,7 @@
     }
 ?>
 
-        <div class="registrationform">
+        <div class="orderform">
             <button type="submit">Замовити</button>
         </div>
     </form>
